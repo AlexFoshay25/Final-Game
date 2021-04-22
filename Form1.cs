@@ -17,9 +17,10 @@ namespace Final_Game
             InitializeComponent();
             pbWaldoPage.BackColor = Color.Transparent;
 
+            double score = 0;
             
 
-            
+
 
 
 
@@ -39,6 +40,9 @@ namespace Final_Game
             pbWilmaHitbox.Location = new Point(pbWilmaHitbox.Location.X - pbWaldoPage.Location.X, pbWilmaHitbox.Location.Y - pbWaldoPage.Location.Y);
             pbWilmaHitbox.Parent = pbWaldoPage;
 
+            
+
+
 
 
 
@@ -49,7 +53,9 @@ namespace Final_Game
 
         private void waldoHitbox_Click(object sender, EventArgs e)
         {
-            lblTitle.Text = "U win";
+            //lblTitle.Text = "U win";
+            
+
         }
 
         private void btnWaldo_Click(object sender, EventArgs e)
@@ -60,8 +66,11 @@ namespace Final_Game
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "Waldo Found!";
-
             
+
+
+
+
 
             pbWaldoHitbox.Image = Properties.Resources.BigRedCircle;
 
@@ -70,7 +79,7 @@ namespace Final_Game
         private void pbEvilWaldoHitbox_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "Evil Waldo Found!";
-
+            
             pbEvilWaldoHitbox.Image = Properties.Resources.BigRedCircle;
             
         }
@@ -78,6 +87,7 @@ namespace Final_Game
         private void pbWizardHitbox_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "The Wizard Found!";
+           
 
             pbWizardHitbox.Image = Properties.Resources.BigRedCircle;
         }
@@ -85,8 +95,29 @@ namespace Final_Game
         private void pbWilmaHitbox_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "Wilma Found!";
+           
 
             pbWilmaHitbox.Image = Properties.Resources.BigRedCircle;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            pbHint.Visible = false;
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+        
         }
     }
 }
